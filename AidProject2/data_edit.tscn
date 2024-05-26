@@ -1,0 +1,152 @@
+[gd_scene load_steps=2 format=3 uid="uid://cm78gm5mesvyf"]
+
+[ext_resource type="Script" path="res://data_edit.cs" id="1_7yl0l"]
+
+[node name="DataEdit" type="Node2D"]
+script = ExtResource("1_7yl0l")
+
+[node name="TitleLabel" type="Label" parent="."]
+offset_left = 873.0
+offset_top = 107.0
+offset_right = 976.0
+offset_bottom = 133.0
+scale = Vector2(2, 2)
+text = "New Disaster"
+metadata/_edit_use_anchors_ = true
+
+[node name="SaveButton" type="Button" parent="."]
+offset_left = 896.0
+offset_top = 684.0
+offset_right = 1028.0
+offset_bottom = 715.0
+text = "Save and return"
+metadata/_edit_use_anchors_ = true
+
+[node name="DateLineEdit" type="LineEdit" parent="."]
+offset_left = 333.0
+offset_top = 253.0
+offset_right = 497.0
+offset_bottom = 284.0
+placeholder_text = "Date (dd/mm/yyyy):"
+metadata/_edit_use_anchors_ = true
+
+[node name="TypeLineEdit" type="LineEdit" parent="."]
+offset_left = 609.0
+offset_top = 253.0
+offset_right = 773.0
+offset_bottom = 284.0
+placeholder_text = "Type:"
+metadata/_edit_use_anchors_ = true
+
+[node name="ScaleLineEdit" type="LineEdit" parent="."]
+offset_left = 896.0
+offset_top = 253.0
+offset_right = 1060.0
+offset_bottom = 284.0
+placeholder_text = "Scale:"
+metadata/_edit_use_anchors_ = true
+
+[node name="PeopleLineEdit" type="LineEdit" parent="."]
+offset_left = 1169.0
+offset_top = 253.0
+offset_right = 1333.0
+offset_bottom = 284.0
+placeholder_text = "People Effected:"
+metadata/_edit_use_anchors_ = true
+
+[node name="FundingLineEdit" type="LineEdit" parent="."]
+offset_left = 1440.0
+offset_top = 253.0
+offset_right = 1604.0
+offset_bottom = 284.0
+placeholder_text = "Funding (£):"
+metadata/_edit_use_anchors_ = true
+
+[node name="CurFoodLineEdit" type="LineEdit" parent="."]
+offset_left = 609.0
+offset_top = 428.0
+offset_right = 773.0
+offset_bottom = 459.0
+placeholder_text = "Current Food:"
+metadata/_edit_use_anchors_ = true
+
+[node name="CurWaterLineEdit" type="LineEdit" parent="."]
+offset_left = 609.0
+offset_top = 484.0
+offset_right = 773.0
+offset_bottom = 515.0
+placeholder_text = "Current Water:"
+metadata/_edit_use_anchors_ = true
+
+[node name="CurMedicineLineEdit" type="LineEdit" parent="."]
+offset_left = 609.0
+offset_top = 547.0
+offset_right = 773.0
+offset_bottom = 578.0
+placeholder_text = "Current Medicine:"
+metadata/_edit_use_anchors_ = true
+
+[node name="CurPersonelLineEdit" type="LineEdit" parent="."]
+offset_left = 609.0
+offset_top = 607.0
+offset_right = 773.0
+offset_bottom = 638.0
+placeholder_text = "Current Personel:"
+metadata/_edit_use_anchors_ = true
+
+[node name="EnRouteFoodLineEdit" type="LineEdit" parent="."]
+offset_left = 1169.0
+offset_top = 428.0
+offset_right = 1333.0
+offset_bottom = 459.0
+placeholder_text = "En Route Food:"
+metadata/_edit_use_anchors_ = true
+
+[node name="EnRouteWaterLineEdit" type="LineEdit" parent="."]
+offset_left = 1169.0
+offset_top = 484.0
+offset_right = 1333.0
+offset_bottom = 515.0
+placeholder_text = "En Route Water:"
+metadata/_edit_use_anchors_ = true
+
+[node name="EnRouteMedicineLineEdit" type="LineEdit" parent="."]
+offset_left = 1169.0
+offset_top = 547.0
+offset_right = 1333.0
+offset_bottom = 578.0
+placeholder_text = "En Route Medicine:"
+metadata/_edit_use_anchors_ = true
+
+[node name="EnRoutePersonelLineEdit" type="LineEdit" parent="."]
+offset_left = 1169.0
+offset_top = 607.0
+offset_right = 1333.0
+offset_bottom = 638.0
+placeholder_text = "EnRoute Personel:"
+metadata/_edit_use_anchors_ = true
+
+[node name="PercentageNoteLabel" type="Label" parent="."]
+offset_left = 609.0
+offset_top = 370.0
+offset_right = 792.0
+offset_bottom = 396.0
+text = "Decimal of required:"
+metadata/_edit_use_anchors_ = true
+
+[node name="PercentageNoteLabel2" type="Label" parent="."]
+offset_left = 1169.0
+offset_top = 370.0
+offset_right = 1352.0
+offset_bottom = 396.0
+text = "Decimal of required:"
+metadata/_edit_use_anchors_ = true
+
+[node name="FieldsNullLabel" type="Label" parent="."]
+offset_left = 808.0
+offset_top = 724.0
+offset_right = 1113.0
+offset_bottom = 750.0
+text = "Error: One or more field(s) are not filled"
+
+[connection signal="pressed" from="SaveButton" to="." method="_on_save_button_pressed"]

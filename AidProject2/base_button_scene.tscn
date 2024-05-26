@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://vbshjwllq7pl"]
+
+[ext_resource type="Script" path="res://base_button_scene.cs" id="1_lpbfw"]
+[ext_resource type="Texture2D" uid="uid://87sidj5kxqly" path="res://Textures/BaseButtonTexture2.2.svg" id="1_oju41"]
+
+[node name="BaseButtonScene" type="Node2D"]
+script = ExtResource("1_lpbfw")
+
+[node name="BaseButton" type="Button" parent="."]
+offset_left = -10.0
+offset_top = -10.0
+offset_right = -2.0
+offset_bottom = -2.0
+scale = Vector2(2.49582, 2.49582)
+metadata/_edit_use_anchors_ = true
+
+[node name="BaseSprite" type="Sprite2D" parent="BaseButton"]
+position = Vector2(4, 5)
+scale = Vector2(0.00599362, 0.00599362)
+texture = ExtResource("1_oju41")
+
+[connection signal="pressed" from="BaseButton" to="." method="_on_base_button_pressed"]
